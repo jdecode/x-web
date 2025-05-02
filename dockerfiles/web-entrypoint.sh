@@ -45,4 +45,6 @@ supervisorctl reread
 supervisorctl update
 supervisorctl start queues
 
+npm run dev --host &
+
 apache2-foreground
