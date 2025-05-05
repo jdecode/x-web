@@ -2,6 +2,11 @@
 
 git config --global --add safe.directory /var/www/html
 
+echo -e "zend_extension=xdebug\n\
+xdebug.mode=debug,coverage\n\
+xdebug.discover_client_host=on\n\
+xdebug.client_host=host.docker.internal\n" > /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+
 ## If vendor folder does not exist, run composer install
 if [ ! -d "/var/www/html/vendor" ]; then
     composer install --optimize-autoloader
