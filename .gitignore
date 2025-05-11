@@ -23,3 +23,7 @@ yarn-error.log
 !/.vscode/settings.json
 /.zed
 storage/*.log
+.direnv/
+result/
+*.drv
+.pgdata/*

@@ -1,8 +1,8 @@
 {
-  description = "Laravel Dev Environment";
+  description = "x-web | Laravel boilerplate";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/0c0bf9c057382d5f6f63d54fd61f1abd5e1c2f63";
   };
 
   outputs = { nixpkgs, ... }: let
@@ -17,6 +17,7 @@
         pkgs.mariadb
         pkgs.nodejs_22
         pkgs.openssl
+        pkgs.glibcLocales
       ];
 
       shellHook = ''
