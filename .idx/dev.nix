@@ -2,12 +2,12 @@
 # see: https://firebase.google.com/docs/studio/customize-workspace
 {pkgs}: {
   # Which nixpkgs channel to use.
-  channel = "stable-24.05"; # or "unstable"
+  channel = "stable-24.11"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.php82
-    pkgs.php82Packages.composer
-    pkgs.nodejs_20
+    pkgs.php84
+    pkgs.php84Packages.composer
+    pkgs.nodejs_22
   ];
   # Sets environment variables in the workspace
   env = {};
